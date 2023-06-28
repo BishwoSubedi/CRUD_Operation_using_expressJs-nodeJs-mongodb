@@ -4,7 +4,7 @@ const app= express();
 import connectDb from './db/connect.js';
 import web from './routes/web.js'
 const port= process.env.PORT||'3000'
-const Database_uri=process.env.Database_uri||"mongodb://127.0.0.1:27017"
+const Database_uri=process.env.Database_uri||"your mongodb url"
 
 //Database Connection
 connectDb(Database_uri);
